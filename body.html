@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiaozhan</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  
+</head>
+<body>
+  <div class="header">
+    <div id="picture-container">
+      <img id="titlepicture" src="https://z1.ax1x.com/2023/09/30/pPqgH58.png" onclick="window.location.href='https://www.tiaozhan.com/'">
+    </div>
+    <div id="header-text">首页</div>
+    <div id="header-text">全部商品
+      <div class="drop">全部商品</div>
+      <div class="drop">全部商品</div>
+      <div class="drop">全部商品</div>
+      <div class="drop">全部商品</div>
+    </div>
+    <div id="header-text">活动特惠
+      <div class="drop">活动特惠</div>
+      <div class="drop">活动特惠</div>
+      <div class="drop">活动特惠</div>
+      <div class="drop">活动特惠</div>
+    </div>
+    <div id="header-text">设计服务
+      <div class="drop">设计服务</div>
+      <div class="drop">设计服务</div>
+      <div class="drop">设计服务</div>
+      <div class="drop">设计服务</div>
+    </div>
+    <div id="header-text">家居灵感
+      <div class="drop">家居灵感</div>
+      <div class="drop">家居灵感</div>
+      <div class="drop">家居灵感</div>
+      <div class="drop">家居灵感</div>
+    </div>
+    <div id="header-text">新品一览
+      <div class="drop">新品一览</div>
+      <div class="drop">新品一览</div>
+      <div class="drop">新品一览</div>
+      <div class="drop">新品一览</div>
+    </div>
+    <div id="header-text">售后服务
+      <div class="drop">售后服务</div>
+      <div class="drop">售后服务</div>
+      <div class="drop">售后服务</div>
+      <div class="drop">售后服务</div>
+    </div>
+    <div class="header-picture-container">
+      <img id="header-picture" src="https://z1.ax1x.com/2023/09/30/pPq25z4.png">
+      <img id="header-picture" src="https://z1.ax1x.com/2023/09/30/pPq24WF.png">
+      <img id="header-picture" src="https://z1.ax1x.com/2023/09/30/pPq2hJU.png">
+    </div>
+  </div>
+  <div class="picture-roll-container">
+    <div class="picture-roll">
+      <img id="rollimage1_1" src="https://z1.ax1x.com/2023/10/01/pPLuJcn.png">
+      <img id="rollimage1_2" src="https://z1.ax1x.com/2023/10/01/pPLuYXq.png">
+      <img id="rollimage1_3" src="https://z1.ax1x.com/2023/10/01/pPLuBh4.png">
+      <div id="progress"></div>
+    </div>
+    
+    <div class="picture-roll">
+      <img id="rollimage2_2" src="https://z1.ax1x.com/2023/10/01/pPLuYXq.png">
+      <img id="rollimage2_3" src="https://z1.ax1x.com/2023/10/01/pPLuBh4.png">
+      <img id="rollimage2_1" src="https://z1.ax1x.com/2023/10/01/pPLuJcn.png">
+      <div id="progress"></div>
+    </div>
+      
+    <div class="picture-roll">
+      <img id="rollimage3_3" src="https://z1.ax1x.com/2023/10/01/pPLuBh4.png">
+      <img id="rollimage3_1" src="https://z1.ax1x.com/2023/10/01/pPLuJcn.png">
+      <img id="rollimage3_2" src="https://z1.ax1x.com/2023/10/01/pPLuYXq.png">
+      <div id="progress"></div>
+    </div>
+  </div>
+  <div class="search-container">
+    <img id="searchbackground" src="https://z1.ax1x.com/2023/10/05/pPX1gtP.png" >
+    <div class="container" >
+      <div class="parent">
+        <input type="text" id="search" placeholder="挑战，无处不在" onkeypress="if (event.keyCode == 13) showResult();" onkeydown="entersearch(event)">
+        <input type="button" name="" id="" class="btn" onclick="to()"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-text">
+    <span id="middletext">前来挑战</span>
+    <span id="middletext">前来挑战</span>
+    <span id="middletext">前来挑战</span>
+    <span id="middletext">前来挑战</span>
+    <span id="middletext">前来挑战</span>
+  </div>
+
+  <div class="manypicture">
+    <img id="img1-1" src="https://z1.ax1x.com/2023/10/05/pPXUeR1.png" onclick="picture_click1()">
+    <img id="img1-2" src="https://z1.ax1x.com/2023/10/05/pPXUZGR.png" onclick="picture_click2()">
+    <img id="img1-3" src="https://z1.ax1x.com/2023/10/05/pPXUmxx.png" onclick="picture_click3()">
+    <img id="img1-4" src="https://z1.ax1x.com/2023/10/05/pPXUAIJ.png" onclick="picture_click4()">
+    <img id="img1-5" src="https://z1.ax1x.com/2023/10/05/pPXUVi9.png" onclick="picture_click5()">
+  </div>
+
+  <div class="mypictures">
+    <img id="mypic1" src="https://z1.ax1x.com/2023/10/06/pPXceKJ.png">
+    <img id="mypic2" src="https://z1.ax1x.com/2023/10/06/pPXcVv4.png">
+    <img id="mypic3" src="https://z1.ax1x.com/2023/10/06/pPXckCT.png">
+    <img id="mypic4" src="https://z1.ax1x.com/2023/10/06/pPXcE2F.png">
+    <img id="mypic5" src="https://z1.ax1x.com/2023/10/06/pPXcA8U.png">
+  </div>
+
+  <div class="video-container">
+    <video width="700"  controls >
+      <source src="./part_1.mp4">
+    </video>
+    <div class="tcontainer">
+      <span id="BEYOND">BEYOND</span>
+      <span id="textline1">There is no elevator to success,</span>
+      <span id="textline2">you have to take the stairs.</span>
+      <span id="textline3">-- Zig Ziglar</span>
+      <span id="textline4">Let us cultivate our garden.</span>
+      <span id="textline5">-- Voltaire</span>
+      <span id="ME">ME</span>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <span id="bottomtext">挑 战 网</span>
+    <span id="bottomtext2">技术部|美工部|视频部|新媒体部|来挑战兴风作浪就是说  </span>
+    <img id="bottompicture" src="https://z1.ax1x.com/2023/10/06/pPXWDTs.png">
+  </div>
+
+
+  
+  
+<script type="text/javascript" src="./animation.js"></script>  
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</body>
+</html>
